@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exclusive A3 Webinar Offer - $500 OFF Certified Lean Practitioner</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', 'Helvetica', sans-serif;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .hero-section {
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            margin: 40px auto;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+        
+        .badge {
+            background: #ffd559;
+            color: #1a1a1a;
+            padding: 8px 20px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        h1 {
+            font-size: 38px;
+            color: #1a1a1a;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .highlight {
+            color: #ffd559;
+            font-weight: bold;
+        }
+        
+        .subheading {
+            font-size: 20px;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        
+        .countdown-container {
+            background: linear-gradient(135deg, #1a1a1a 0%, #333 100%);
+            padding: 30px;
+            border-radius: 12px;
+            margin: 30px 0;
+        }
+        
+        .countdown-label {
+            color: #ffd559;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .countdown-item {
+            background: rgba(255, 213, 89, 0.1);
+            border: 2px solid #ffd559;
+            border-radius: 8px;
+            padding: 20px;
+            min-width: 100px;
+        }
+        
+        .countdown-number {
+            font-size: 48px;
+            font-weight: bold;
+            color: #ffd559;
+            display: block;
+        }
+        
+        .countdown-text {
+            font-size: 14px;
+            color: #ccc;
+            text-transform: uppercase;
+            margin-top: 5px;
+        }
+        
+        .price-section {
+            margin: 40px 0;
+            padding: 30px;
+            background: #f8f8f8;
+            border-radius: 12px;
+        }
+        
+        .original-price {
+            font-size: 24px;
+            color: #999;
+            text-decoration: line-through;
+            margin-bottom: 10px;
+        }
+        
+        .special-price {
+            font-size: 56px;
+            color: #1a1a1a;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        
+        .savings {
+            font-size: 28px;
+            color: #e74c3c;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        
+        .promo-code {
+            background: #ffd559;
+            padding: 15px 30px;
+            border-radius: 8px;
+            margin: 20px 0;
+            display: inline-block;
+        }
+        
+        .promo-code-label {
+            font-size: 14px;
+            color: #1a1a1a;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .promo-code-text {
+            font-size: 24px;
+            color: #1a1a1a;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        
+        .cta-button {
+            background: #ffd559;
+            color: #1a1a1a;
+            padding: 20px 50px;
+            font-size: 22px;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin: 20px 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 213, 89, 0.3);
+        }
+        
+        .cta-button:hover {
+            background: #ffdf7a;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 213, 89, 0.4);
+        }
+        
+        .benefits {
+            text-align: left;
+            margin: 40px 0;
+            padding: 30px;
+            background: white;
+        }
+        
+        .benefit-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #f8f8f8;
+            border-radius: 8px;
+        }
+        
+        .benefit-icon {
+            color: #ffd559;
+            font-size: 28px;
+            margin-right: 15px;
+            min-width: 30px;
+        }
+        
+        .benefit-text {
+            flex: 1;
+        }
+        
+        .benefit-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #1a1a1a;
+            margin-bottom: 5px;
+        }
+        
+        .benefit-description {
+            color: #666;
+            font-size: 15px;
+        }
+        
+        .testimonial {
+            background: #1a1a1a;
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 30px 0;
+            border-left: 4px solid #ffd559;
+        }
+        
+        .testimonial-text {
+            font-size: 18px;
+            font-style: italic;
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+        
+        .testimonial-author {
+            font-weight: bold;
+            color: #ffd559;
+            font-size: 16px;
+        }
+        
+        .testimonial-title {
+            color: #ccc;
+            font-size: 14px;
+        }
+        
+        .urgency-banner {
+            background: #e74c3c;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 16px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #999;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 28px;
+            }
+            
+            .hero-section {
+                padding: 30px 20px;
+            }
+            
+            .countdown-number {
+                font-size: 36px;
+            }
+            
+            .special-price {
+                font-size: 42px;
+            }
+            
+            .cta-button {
+                padding: 18px 40px;
+                font-size: 18px;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero-section">
+            <div class="badge">🎯 Exclusive A3 Webinar Offer</div>
+            
+            <h1>Save <span class="highlight">$500</span> on Your<br>Certified Lean Practitioner Journey</h1>
+            
+            <p class="subheading">Transform your career with proven Lean credentials and practical implementation skills</p>
+            
+            <div class="countdown-container">
+                <div class="countdown-label">⏰ Offer Expires In:</div>
+                <div class="countdown" id="countdown">
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="days">00</span>
+                        <span class="countdown-text">Days</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="hours">00</span>
+                        <span class="countdown-text">Hours</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="minutes">00</span>
+                        <span class="countdown-text">Minutes</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="seconds">00</span>
+                        <span class="countdown-text">Seconds</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="price-section">
+                <div class="original-price">Regular Price: $995</div>
+                <div class="special-price">$495</div>
+                <div class="savings">You Save $500!</div>
+                
+                <div class="promo-code">
+                    <span class="promo-code-label">Use Promo Code:</span>
+                    <span class="promo-code-text">A3WEBINAR</span>
+                </div>
+            </div>
+            
+            <a href="https://buy.stripe.com/5kQ9AT6Jn5jc1s4guh38409?prefilled_promo_code=A3WEBINAR" class="cta-button">
+                🚀 CLAIM YOUR SPOT NOW
+            </a>
+            
+            <div class="urgency-banner">
+                ⚡ Limited to webinar participants only - This offer won't be repeated!
+            </div>
+        </div>
+        
+        <div class="benefits">
+            <h2 style="text-align: center; margin-bottom: 30px; font-size: 32px; color: #1a1a1a;">What You'll Master</h2>
+            
+            <div class="benefit-item">
+                <div class="benefit-icon">✅</div>
+                <div class="benefit-text">
+                    <div class="benefit-title">Toyota Production System & Lean Fundamentals</div>
+                    <div class="benefit-description">Deep dive into authentic TPS principles and waste elimination strategies</div>
+                </div>
+            </div>
+            
+            <div class="benefit-item">
+                <div class="benefit-icon">✅</div>
+                <div class="benefit-text">
+                    <div class="benefit-title">A3 & Scientific Problem Solving</div>
+                    <div class="benefit-description">Master the 7 QC Tools and structured problem-solving methodology</div>
+                </div>
+            </div>
+            
+            <div class="benefit-item">
+                <div class="benefit-icon">✅</div>
+                <div class="benefit-text">
+                    <div class="benefit-title">Value Stream Mapping</div>
+                    <div class="benefit-description">Learn to identify inefficiencies and design optimized future states</div>
+                </div>
+            </div>
+            
+            <div class="benefit-item">
+                <div class="benefit-icon">✅</div>
+                <div class="benefit-text">
+                    <div class="benefit-title">One-to-One Project Coaching</div>
+                    <div class="benefit-description">Expert guidance on real-world improvement projects with proven templates</div>
+                </div>
+            </div>
+            
+            <div class="benefit-item">
+                <div class="benefit-icon">✅</div>
+                <div class="benefit-text">
+                    <div class="benefit-title">Official Certification</div>
+                    <div class="benefit-description">180-question rigorous exam and recognized Lean Practitioner Certificate</div>
+                </div>
+            </div>
+            
+            <div class="benefit-item">
+                <div class="benefit-icon">✅</div>
+                <div class="benefit-text">
+                    <div class="benefit-title">Lifetime Support</div>
+                    <div class="benefit-description">Ongoing access to project coaching, webinars, and professional community</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-section">
+            <h2 style="margin-bottom: 30px; font-size: 28px; color: #1a1a1a;">Why Professionals Choose This Program</h2>
+            
+            <div class="testimonial">
+                <div class="testimonial-text">"Ahmed is a delight to work with. He did an amazing job of synthesizing key points from the book [The Toyota Way], wrote a draft of the script, connected the script to engaging graphics, and is an ace at the technology. Ahmed clearly has a deep grasp of lean and The Toyota Way."</div>
+                <div class="testimonial-author">Jeffrey Liker</div>
+                <div class="testimonial-title">Author of The Toyota Way, Liker Lean Advisor</div>
+            </div>
+            
+            <div class="testimonial">
+                <div class="testimonial-text">"Ahmed has established an awesome presence on LI articulating visuals, quotes, short PowerPoints that has helped me enhance my materials, as well as many others so they grow in their role and genre of work. He is eager to lead and learn simultaneously with others."</div>
+                <div class="testimonial-author">Tracey Richardson</div>
+                <div class="testimonial-title">Retired from Toyota, Author of The Toyota Engagement Equation</div>
+            </div>
+            
+            <div style="margin: 40px 0; padding: 30px; background: #f8f8f8; border-radius: 12px; text-align: left;">
+                <h3 style="color: #1a1a1a; margin-bottom: 20px; font-size: 22px;">🎓 Led by Ahmed Radwan</h3>
+                <p style="color: #666; margin-bottom: 15px; font-size: 16px;">15+ years experience in Lean manufacturing and operational excellence</p>
+                <ul style="color: #666; margin-left: 20px; line-height: 2;">
+                    <li>Certified Lean Six Sigma Master Black Belt</li>
+                    <li>Certified Lean Bronze (Shingo Institute)</li>
+                    <li>Master of Business Administration</li>
+                    <li>Trusted by 5,000+ professionals worldwide</li>
+                </ul>
+            </div>
+            
+            <a href="https://buy.stripe.com/5kQ9AT6Jn5jc1s4guh38409?prefilled_promo_code=A3WEBINAR" class="cta-button">
+                💼 ENROLL NOW - SAVE $500
+            </a>
+            
+            <p style="margin-top: 20px; color: #999; font-size: 14px;">
+                Flexible learning • Self-paced modules • Industry versatile<br>
+                Perfect for manufacturing, healthcare, finance & services
+            </p>
+        </div>
+        
+        <div class="footer">
+            <p><strong>Kaizen Academy™</strong></p>
+            <p>The Continuous Improvement Academy</p>
+            <p style="margin-top: 20px;">
+                5 Pioneer Street, Craigieburn, Victoria 3064, Australia<br>
+                learn@continuousimprovement.education | (+61) 473-649-237
+            </p>
+            <p style="margin-top: 20px; font-size: 12px; color: #666;">
+                Empowering People • Driving Excellence • Always Improving
+            </p>
+        </div>
+    </div>
+    
+    <script>
+        // Set the countdown end date - November 26, 2025, 8:00 AM Melbourne Time (AEDT = UTC+11)
+        const countdownDate = new Date('2025-11-26T08:00:00+11:00').getTime();
+        
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const distance = countdownDate - now;
+            
+            if (distance < 0) {
+                document.getElementById('countdown').innerHTML = '<div class="countdown-item"><span class="countdown-number">EXPIRED</span></div>';
+                return;
+            }
+            
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            document.getElementById('days').innerText = String(days).padStart(2, '0');
+            document.getElementById('hours').innerText = String(hours).padStart(2, '0');
+            document.getElementById('minutes').innerText = String(minutes).padStart(2, '0');
+            document.getElementById('seconds').innerText = String(seconds).padStart(2, '0');
+        }
+        
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+    </script>
+</body>
+</html>

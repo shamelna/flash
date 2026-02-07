@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Certified Lean Practitioner Program - Transform Your Career | Kaizen Academy</title>
+    <title>Certified Lean Practitioner Program - Flash Sale | Kaizen Academy</title>
     <link rel="icon" type="image/x-icon" href="http://practitioner.kaizenacademy.education/Tcia.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +16,7 @@
             --light-grey: #f5f5f5;
             --white: #ffffff;
             --accent: #ff6b35;
+            --flash-red: #dc2626;
         }
         
         * {
@@ -30,6 +31,79 @@
             color: var(--dark);
             overflow-x: hidden;
             line-height: 1.6;
+        }
+        
+        /* Countdown Timer Styles */
+        .countdown-container {
+            background: linear-gradient(135deg, var(--flash-red) 0%, #b91c1c 100%);
+            color: var(--white);
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(220, 38, 38, 0.4);
+            margin-bottom: 20px;
+            animation: pulse-border 2s ease-in-out infinite;
+        }
+        
+        @keyframes pulse-border {
+            0%, 100% { box-shadow: 0 4px 20px rgba(220, 38, 38, 0.4); }
+            50% { box-shadow: 0 4px 30px rgba(220, 38, 38, 0.7); }
+        }
+        
+        .countdown-label {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 12px;
+        }
+        
+        .countdown-timer {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .countdown-unit {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 15px 20px;
+            border-radius: 8px;
+            min-width: 80px;
+        }
+        
+        .countdown-number {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 36px;
+            line-height: 1;
+            display: block;
+        }
+        
+        .countdown-text {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 4px;
+            opacity: 0.9;
+        }
+        
+        .offer-expired {
+            display: none;
+            background: var(--grey);
+            color: var(--white);
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .offer-expired h3 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 32px;
+            margin-bottom: 12px;
+            letter-spacing: 1px;
+        }
+        
+        .offer-expired p {
+            font-size: 18px;
+            margin-bottom: 20px;
         }
         
         /* Hero Section */
@@ -81,8 +155,8 @@
         
         .hero-badge {
             display: inline-block;
-            background: var(--primary-yellow);
-            color: var(--dark);
+            background: var(--flash-red);
+            color: var(--white);
             padding: 8px 24px;
             font-weight: 700;
             font-size: 14px;
@@ -90,7 +164,7 @@
             text-transform: uppercase;
             margin-bottom: 24px;
             animation: fadeInUp 0.8s ease-out 0.2s both;
-            box-shadow: 0 4px 20px rgba(255, 213, 89, 0.3);
+            box-shadow: 0 4px 20px rgba(220, 38, 38, 0.4);
         }
         
         h1 {
@@ -118,14 +192,34 @@
         }
         
         .price-banner {
-            background: rgba(255, 213, 89, 0.15);
-            border: 2px solid var(--primary-yellow);
+            background: rgba(220, 38, 38, 0.2);
+            border: 3px solid var(--flash-red);
             padding: 30px;
             margin: 40px auto;
             max-width: 600px;
             text-align: center;
             animation: fadeInUp 0.8s ease-out 0.8s both;
             position: relative;
+        }
+        
+        .flash-badge {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--flash-red);
+            color: var(--white);
+            padding: 6px 20px;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            animation: flash 1.5s ease-in-out infinite;
+        }
+        
+        @keyframes flash {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
         }
         
         .price-label {
@@ -159,7 +253,7 @@
         }
         
         .savings {
-            background: var(--accent);
+            background: var(--flash-red);
             color: var(--white);
             padding: 6px 16px;
             font-weight: 700;
@@ -213,9 +307,10 @@
         .urgency-text {
             margin-top: 16px;
             font-size: 14px;
-            color: var(--primary-yellow);
-            font-weight: 600;
+            color: var(--flash-red);
+            font-weight: 700;
             letter-spacing: 1px;
+            text-transform: uppercase;
         }
         
         /* Problem Section */
@@ -760,6 +855,15 @@
             .testimonials-grid {
                 grid-template-columns: 1fr;
             }
+            
+            .countdown-unit {
+                min-width: 70px;
+                padding: 12px 15px;
+            }
+            
+            .countdown-number {
+                font-size: 28px;
+            }
         }
     </style>
 </head>
@@ -772,9 +876,38 @@
             </div>
             
             <div style="text-align: center;">
-                <div class="hero-badge">Certified Lean Practitioner</div>
+                <div class="hero-badge">🔥 FLASH SALE - 50% OFF</div>
                 <h1>Transform Your Career &<br><span>Drive Operational Excellence</span></h1>
                 <p class="hero-subtitle">Master the Toyota Production System, eliminate waste, and become the operational excellence leader your organization needs.</p>
+                
+                <!-- Countdown Timer -->
+                <div id="countdown-section" class="countdown-container">
+                    <div class="countdown-label">⏰ FLASH SALE ENDS IN:</div>
+                    <div class="countdown-timer">
+                        <div class="countdown-unit">
+                            <span class="countdown-number" id="days">00</span>
+                            <span class="countdown-text">Days</span>
+                        </div>
+                        <div class="countdown-unit">
+                            <span class="countdown-number" id="hours">00</span>
+                            <span class="countdown-text">Hours</span>
+                        </div>
+                        <div class="countdown-unit">
+                            <span class="countdown-number" id="minutes">00</span>
+                            <span class="countdown-text">Minutes</span>
+                        </div>
+                        <div class="countdown-unit">
+                            <span class="countdown-number" id="seconds">00</span>
+                            <span class="countdown-text">Seconds</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Offer Expired Message -->
+                <div id="offer-expired" class="offer-expired">
+                    <h3>⚠️ Flash Sale Has Ended</h3>
+                    <p>The special offer has expired. Regular pricing now applies.</p>
+                </div>
                 
                 <div class="video-container" style="max-width: 800px; margin: 40px auto; animation: fadeInUp 0.8s ease-out 0.7s both;">
                     <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3); border: 4px solid var(--primary-yellow);">
@@ -789,18 +922,20 @@
                     </div>
                 </div>
                 
-                <div class="price-banner">
-                    <div class="price-label">Special Limited Offer</div>
+                <!-- Dynamic Price Banner -->
+                <div id="price-section" class="price-banner">
+                    <div class="flash-badge">⚡ 50% OFF</div>
+                    <div class="price-label">Limited Time Flash Sale</div>
                     <div class="price-container">
                         <span class="original-price">$995</span>
-                        <span class="current-price">$650</span>
+                        <span class="current-price">$495</span>
                     </div>
-                    <div class="savings">SAVE $345 - 35% OFF</div>
+                    <div class="savings">SAVE $500 - 50% OFF</div>
                 </div>
                 
                 <div class="cta-container">
-                    <a href="https://buy.stripe.com/5kQ9AT6Jn5jc1s4guh38409?prefilled_promo_code=special-demo" class="cta-button">Enroll Now</a>
-                    <p class="urgency-text">⏰ Limited Time Special Pricing</p>
+                    <a href="https://academy.continuousimprovement.education/p/certified-lean-practitioner-training-bundle?coupon_code=KAIZEN" id="cta-link" class="cta-button">Enroll Now - 50% Off</a>
+                    <p class="urgency-text" id="urgency-text">⏰ Hurry! Flash sale ends soon</p>
                 </div>
             </div>
         </div>
@@ -916,7 +1051,7 @@
                 <div class="module-card">
                     <div class="module-number">05</div>
                     <h3>Certification Exam</h3>
-                    <p>Validate your expertise with a rigorous 2-hour certification exam covering all core competencies.</p>
+                    <p>Validate your expertise with a rigorous certification exam covering all core competencies.</p>
                     <ul>
                         <li>180 multiple-choice questions</li>
                         <li>Comprehensive assessment</li>
@@ -1050,17 +1185,19 @@
                 <p>Master Lean principles, earn your certification, and become the leader your organization needs.</p>
             </div>
             
-            <div class="price-banner" style="background: rgba(255, 213, 89, 0.15); border: 2px solid var(--primary-yellow); margin-bottom: 40px;">
-                <div class="price-label">Special Offer - Limited Time</div>
+            <!-- Dynamic Final Price Banner -->
+            <div id="final-price-section" class="price-banner" style="background: rgba(220, 38, 38, 0.2); border: 3px solid var(--flash-red); margin-bottom: 40px;">
+                <div class="flash-badge">⚡ 50% OFF</div>
+                <div class="price-label">Flash Sale - Limited Time Only</div>
                 <div class="price-container">
                     <span class="original-price">$995</span>
-                    <span class="current-price">$650</span>
+                    <span class="current-price">$495</span>
                 </div>
-                <div class="savings">SAVE $345 TODAY</div>
+                <div class="savings">SAVE $500 TODAY</div>
             </div>
             
-            <a href="https://buy.stripe.com/5kQ9AT6Jn5jc1s4guh38409?prefilled_promo_code=special-demo" class="cta-button">Start Your Journey Now</a>
-            <p class="urgency-text">⏰ Special pricing won't last forever</p>
+            <a href="https://academy.continuousimprovement.education/p/certified-lean-practitioner-training-bundle?coupon_code=KAIZEN" id="final-cta-link" class="cta-button">Start Your Journey Now - 50% Off</a>
+            <p class="urgency-text" id="final-urgency-text">⏰ Flash sale ends soon - Don't miss out!</p>
         </div>
     </section>
 
@@ -1076,7 +1213,7 @@
                 
                 <div class="footer-section">
                     <h4>Contact</h4>
-                    <p>📧 <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="9cf0f9fdeef2dcfff3f2e8f5f2e9f3e9eff5f1eceef3eaf9f1f9f2e8b2f9f8e9fffde8f5f3f2">[email&#160;protected]</a></p>
+                    <p>📧 info@continuousimprovement.education</p>
                 </div>
                 
                 <div class="footer-section">
@@ -1087,4 +1224,68 @@
             </div>
             
             <div class="footer-bottom">
-              
+                <p>&copy; 2026 Kaizen Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Set the deadline - February 10, 2026 at 12:00 AM
+        const deadline = new Date('2026-02-10T00:00:00').getTime();
+        
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const timeLeft = deadline - now;
+            
+            if (timeLeft <= 0) {
+                // Offer expired - switch to full price
+                document.getElementById('countdown-section').style.display = 'none';
+                document.getElementById('offer-expired').style.display = 'block';
+                
+                // Update price banners
+                const priceBanners = document.querySelectorAll('.price-banner');
+                priceBanners.forEach(banner => {
+                    banner.innerHTML = `
+                        <div class="price-label">Regular Price</div>
+                        <div class="price-container">
+                            <span class="current-price">$995</span>
+                        </div>
+                    `;
+                });
+                
+                // Update CTAs to full price link
+                const ctaLinks = document.querySelectorAll('#cta-link, #final-cta-link');
+                ctaLinks.forEach(link => {
+                    link.href = 'https://academy.continuousimprovement.education/p/certified-lean-practitioner-training-bundle';
+                    link.textContent = 'Enroll Now';
+                });
+                
+                // Update urgency text
+                const urgencyTexts = document.querySelectorAll('#urgency-text, #final-urgency-text');
+                urgencyTexts.forEach(text => {
+                    text.textContent = 'Flash sale has ended - Regular pricing applies';
+                    text.style.color = '#666';
+                });
+                
+                return;
+            }
+            
+            // Calculate time units
+            const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+            
+            // Update countdown display
+            document.getElementById('days').textContent = String(days).padStart(2, '0');
+            document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+            document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+            document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+        }
+        
+        // Update countdown immediately and every second
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+    </script>
+</body>
+</html>
